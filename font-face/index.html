@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+    <title>@font-face</title>
+    <style>
+      body {
+        opacity: 0;
+        -webkit-transition: opacity 3000ms ease-out;
+      }
+
+      .loaded {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Back to the future III</h1>
+
+    <p>Back to the Future Part III is a 1990 American comic science fiction Western film. It is the third and final installment of the Back to the Future trilogy. The film was directed by Robert Zemeckis and starred Michael J. Fox, Christopher Lloyd, Mary Steenburgen, Thomas F. Wilson, and Lea Thompson. The film takes place immediately after the events of Back to the Future Part II. While stranded in 1955 during his time travel adventures, Marty McFly (Fox) discovers that his friend Dr. Emmett "Doc" Brown (Lloyd), trapped in 1885, was killed by Biff Tannen's great-grandfather Buford. Marty decides to travel to 1885 to rescue Doc.</p>
+
+    <p>Back to the Future Part III was filmed in California and Arizona, and was produced on a $40 million budget back-to-back with Back to the Future Part II. Part III was released in the United States on May 25, 1990, six months after the previous installment. Part III received generally positive reviews from critics and, although it was the lowest-grossing of the series' three films, it was commercially successful, earning $244.53 million at the box office, making it the sixth-highest-grossing film of 1990.</p>
+
+    <script>
+      var font = new FontFace('Indie Flower', 'url(http://themes.googleusercontent.com/static/fonts/indieflower/v5/10JVD_humAd5zP2yrFqw6qRDOzjiPcYnFooOUGCOsRk.woff)', {});
+
+      font.load().then(function(loadedFont) {
+        document.fonts.add(loadedFont);
+        document.body.style.fontFamily = '\'Indie Flower\', cursive';
+        document.body.classList.add('loaded');
+      });
+    </script>
+
+  </body>
+</html>
