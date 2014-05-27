@@ -1,4 +1,4 @@
-# Dont't make me wait!
+# Don't make me wait!
 
 > Examples, videos and slides.
 
